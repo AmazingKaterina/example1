@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<title>My Landing Page</title>
+</head>
+<body>
+  <header>
+      <div class="container">
+        <h1>Awesome App</h1>
+        <h2>This app will change your life</h2>
+        <a class="btn">Download now</a>
+        <div class="submenu">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <script>
+          $(function() {
+            $(".btn").click(function() {
+              $(".submenu").slideToggle(500);
+              });
+            })
+            </script>
+        </div>
+      </div>
+    </header>
+    <section clss="features">
+      <div class="container">
+        <div class="feature">
+          <i class="fas fa-fish"></i>
+          <p>Awesome feature</p>
+        </div>
+        <div class="feature">
+        <i class="fas fa-ship"></i>
+          <p>Awesome feature</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-anchor"></i>
+          <p>Awesome feature</p>
+        </div>
+      </div>
+    </section>
+    <section class="quote">
+    <blockquote class="container">
+      <p>"Some great quote!"</p>
+      <cite>- Satisfied Customer</cite>
+    </blockquote>
+    </section>
+    <footer>
+      <div class="container">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+        <p>&#169;	 All rights reserved. </p>
+      </div>
+    </footer>
+  </body>
+  </html>
